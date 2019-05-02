@@ -1,0 +1,40 @@
+<?php
+    $url = "http://localhost:8080/contatos";
+    $json = file_get_contents($url);
+    $dados_array = json_decode($json, true);
+    // print_r($json);
+    // print_r($dados_array);
+
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Page Title</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <h3>Lista de contato</h3>
+        </header>
+        <div>
+            <form method="POST" action="cadastro.php">
+                <label>Nome:</label>
+                <input type="text" name="txt_nome"><br><br>
+                <label>E-mail:</label>
+                <input type="text" name="txt_email"><br><br>
+                <label>Endereco:</label>
+                <input type="text" name="txt_endereco"><br><br>
+                <label>Telefone:</label>
+                <input type="text" name="txt_telefone"><br><br>
+                <label>Linkein:</label>
+                <input type="text" name="txt_linkedin"><br><br>
+                <label>Foto:</label>
+                <input type="text" name="txt_foto"><br><br>
+                
+                <button type="submit" name="btn_salvar">Gravar contato</button>
+            </form>
+        </div>
+    </body>
+</html> 

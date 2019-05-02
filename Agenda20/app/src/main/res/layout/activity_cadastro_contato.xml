@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroContato">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view_contato"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorCinza"/>
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textColor="@color/colorPreto"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/nome__contato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o nome"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone:"
+                android:textColor="@color/colorPreto"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/telefone__contato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o nome"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textColor="@color/colorPreto"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/email_contato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o email"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endereco:"
+                android:textColor="@color/colorPreto"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/endereco_contato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o endereco"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="linkedin:"
+                android:textColor="@color/colorPreto"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/linkedin_contato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o linkedin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foto:"
+                android:textColor="@color/colorPreto"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/foto_contato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o Foto"/>
+
+            <Button
+                android:id="@+id/salva_contato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="SALVAR"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
